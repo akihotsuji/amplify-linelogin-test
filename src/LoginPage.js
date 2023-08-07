@@ -9,7 +9,7 @@ function LoginPage() {
     useEffect(() => {
         const listener = (data) => {
           if (data.payload.event === 'signIn') {
-            navigate('/login-success');
+            navigate('/login');
           }
         };
       
