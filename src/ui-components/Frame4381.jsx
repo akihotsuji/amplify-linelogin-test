@@ -7,35 +7,29 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Image } from "@aws-amplify/ui-react";
-export default function Logo(props) {
+import { Flex } from "@aws-amplify/ui-react";
+export default function Frame4381(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="8px"
+      gap="10px"
       direction="column"
       width="unset"
       height="unset"
-      justifyContent="center"
-      alignItems="center"
+      justifyContent="flex-start"
+      alignItems="flex-start"
+      overflow="hidden"
       position="relative"
-      padding="8px 8px 8px 8px"
-      {...getOverrideProps(overrides, "Logo")}
+      padding="276px 164px 276px 164px"
+      backgroundColor="rgba(255,255,255,1)"
+      {...getOverrideProps(overrides, "Frame4381")}
       {...rest}
     >
-      <Image
-        width="108px"
-        height="37px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        shrink="0"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        objectFit="unset"
-        {...getOverrideProps(overrides, "HirobaC 1")}
-      ></Image>
+      <Flex
+        width="1440px"
+        height="unset"
+        {...getOverrideProps(overrides, "HeroLayout1")}
+      ></Flex>
     </Flex>
   );
 }

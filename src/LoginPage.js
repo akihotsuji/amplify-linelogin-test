@@ -1,7 +1,7 @@
 import { React,useEffect } from 'react';
 import { Auth,Hub } from 'aws-amplify';
 import { useNavigate } from 'react-router-dom';
-import { Page1 } from './ui-components';
+import { RegistComplete } from './ui-components';
 
 function LoginPage() {
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ function LoginPage() {
 
   return (
     <div className="App">
-      <Page1 overrides={{ Button: { onClick: signInWithLine } }} />
+      <RegistComplete overrides={{ Button: { onClick: signInWithLine } }} />
     </div>
   );
 }

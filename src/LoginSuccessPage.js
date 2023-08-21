@@ -1,8 +1,8 @@
 import React from 'react';
-import { HeroLayout1 } from './ui-components';
+import { Optin } from './ui-components';
 
 function LoginSuccessPage() {
-  return <HeroLayout1 />;
+  return <Optin />;
 }
 
 export default LoginSuccessPage;

@@ -7,35 +7,45 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Image } from "@aws-amplify/ui-react";
-export default function Logo(props) {
+import { Flex, Text } from "@aws-amplify/ui-react";
+export default function TagIcon(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="8px"
-      direction="column"
+      gap="10px"
+      direction="row"
       width="unset"
       height="unset"
       justifyContent="center"
       alignItems="center"
       position="relative"
-      padding="8px 8px 8px 8px"
-      {...getOverrideProps(overrides, "Logo")}
+      borderRadius="10px"
+      padding="2px 5px 2px 5px"
+      backgroundColor="rgba(29,186,54,1)"
+      {...getOverrideProps(overrides, "TagIcon")}
       {...rest}
     >
-      <Image
-        width="108px"
-        height="37px"
+      <Text
+        fontFamily="Inter"
+        fontSize="14px"
+        fontWeight="400"
+        color="rgba(255,255,255,1)"
+        lineHeight="21px"
+        textAlign="left"
         display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
         gap="unset"
         alignItems="unset"
-        justifyContent="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        objectFit="unset"
-        {...getOverrideProps(overrides, "HirobaC 1")}
-      ></Image>
+        whiteSpace="pre-wrap"
+        children="タグ名"
+        {...getOverrideProps(overrides, "\u30BF\u30B0\u540D")}
+      ></Text>
     </Flex>
   );
 }

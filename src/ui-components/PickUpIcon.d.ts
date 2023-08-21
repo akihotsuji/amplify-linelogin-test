@@ -6,13 +6,14 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps, ImageProps } from "@aws-amplify/ui-react";
+import { TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LogoOverridesProps = {
-    Logo?: PrimitiveOverrideProps<FlexProps>;
-    "HirobaC 1"?: PrimitiveOverrideProps<ImageProps>;
+export declare type PickUpIconOverridesProps = {
+    PickUpIcon?: PrimitiveOverrideProps<ViewProps>;
+    "Rectangle 7"?: PrimitiveOverrideProps<ViewProps>;
+    Pickup?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type LogoProps = React.PropsWithChildren<Partial<FlexProps> & {
-    overrides?: LogoOverridesProps | undefined | null;
+export declare type PickUpIconProps = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: PickUpIconOverridesProps | undefined | null;
 }>;
-export default function Logo(props: LogoProps): React.ReactElement;
+export default function PickUpIcon(props: PickUpIconProps): React.ReactElement;

@@ -6,13 +6,14 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps, ImageProps } from "@aws-amplify/ui-react";
+import { FlexProps, IconProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LogoOverridesProps = {
-    Logo?: PrimitiveOverrideProps<FlexProps>;
-    "HirobaC 1"?: PrimitiveOverrideProps<ImageProps>;
+export declare type SpeechBubbleDescriptionOverridesProps = {
+    SpeechBubbleDescription?: PrimitiveOverrideProps<FlexProps>;
+    SpeechBubble?: PrimitiveOverrideProps<ViewProps>;
+    Speaker?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
-export declare type LogoProps = React.PropsWithChildren<Partial<FlexProps> & {
-    overrides?: LogoOverridesProps | undefined | null;
+export declare type SpeechBubbleDescriptionProps = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: SpeechBubbleDescriptionOverridesProps | undefined | null;
 }>;
-export default function Logo(props: LogoProps): React.ReactElement;
+export default function SpeechBubbleDescription(props: SpeechBubbleDescriptionProps): React.ReactElement;

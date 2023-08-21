@@ -6,13 +6,13 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps, ImageProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LogoOverridesProps = {
-    Logo?: PrimitiveOverrideProps<FlexProps>;
-    "HirobaC 1"?: PrimitiveOverrideProps<ImageProps>;
+export declare type TagIconOverridesProps = {
+    TagIcon?: PrimitiveOverrideProps<FlexProps>;
+    "\u30BF\u30B0\u540D"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type LogoProps = React.PropsWithChildren<Partial<FlexProps> & {
-    overrides?: LogoOverridesProps | undefined | null;
+export declare type TagIconProps = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: TagIconOverridesProps | undefined | null;
 }>;
-export default function Logo(props: LogoProps): React.ReactElement;
+export default function TagIcon(props: TagIconProps): React.ReactElement;

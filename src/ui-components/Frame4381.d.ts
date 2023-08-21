@@ -6,13 +6,13 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps, ImageProps } from "@aws-amplify/ui-react";
+import { FlexProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LogoOverridesProps = {
-    Logo?: PrimitiveOverrideProps<FlexProps>;
-    "HirobaC 1"?: PrimitiveOverrideProps<ImageProps>;
+export declare type Frame4381OverridesProps = {
+    Frame4381?: PrimitiveOverrideProps<FlexProps>;
+    HeroLayout1?: PrimitiveOverrideProps<FlexProps>;
 } & EscapeHatchProps;
-export declare type LogoProps = React.PropsWithChildren<Partial<FlexProps> & {
-    overrides?: LogoOverridesProps | undefined | null;
+export declare type Frame4381Props = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: Frame4381OverridesProps | undefined | null;
 }>;
-export default function Logo(props: LogoProps): React.ReactElement;
+export default function Frame4381(props: Frame4381Props): React.ReactElement;
